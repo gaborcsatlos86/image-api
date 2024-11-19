@@ -40,7 +40,6 @@ class MediaObjectTest extends ApiTestCase
     {
         $client = self::createClient();
         $response = $client->request('GET', '/media_objects');
-        var_dump($response->getContent());
         $this->assertResponseIsSuccessful();
     }
 }
